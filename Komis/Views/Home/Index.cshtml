@@ -1,10 +1,10 @@
-﻿@model IEnumerable<Komis.Models.Samochod>
+﻿@model Komis.ViewModels.HomeVm
 
 
 
-<h2>@ViewBag.Tytul</h2>
+<h2>@Model.Tytul</h2>
 
-@foreach (var samochod in Model)
+@foreach (var samochod in Model.Samochody)
 {
     <div>
         <h2>@samochod.Marka</h2>
